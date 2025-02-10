@@ -1,6 +1,6 @@
 
 import Navbar from "@/components/Navbar";
-import { Star, Clock, ArrowRight } from "lucide-react";
+import { Star, Clock, Pizza, Phone, Mail, ArrowRight } from "lucide-react";
 
 const Index = () => {
   return (
