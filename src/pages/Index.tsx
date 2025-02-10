@@ -11,8 +11,8 @@ const Index = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-            alt="Background"
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
+            alt="Delicious Pizza"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/40" />
@@ -64,27 +64,78 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20">
+      {/* Gallery Section */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Our Story</h2>
-            <p className="text-gray-600 mb-8">
-              Founded in 2024, P4Pizza has been serving the community with authentic Italian pizzas made from traditional recipes. Our commitment to quality and service has made us a favorite among pizza lovers.
-            </p>
-            <a
-              href="#contact"
-              className="inline-flex items-center text-pizza-600 hover:text-pizza-700 transition-colors"
-            >
-              Learn More
-              <ArrowRight className="ml-1 h-4 w-4" />
-            </a>
+          <h2 className="text-3xl font-bold text-center mb-12">Our Specialties</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img
+                src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002"
+                alt="Margherita Pizza"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Classic Margherita</h3>
+                <p className="text-gray-600">Fresh basil, mozzarella, and tomatoes</p>
+              </div>
+            </div>
+            <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img
+                src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5"
+                alt="Pepperoni Pizza"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Spicy Pepperoni</h3>
+                <p className="text-gray-600">Premium pepperoni with melted cheese</p>
+              </div>
+            </div>
+            <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+                alt="Supreme Pizza"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Supreme Delight</h3>
+                <p className="text-gray-600">Loaded with fresh vegetables and meats</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1542834369-f10ebf06d3e0"
+                alt="Our Kitchen"
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+              <p className="text-gray-600 mb-8">
+                Founded in 2024, P4Pizza has been serving the community with authentic Italian pizzas made from traditional recipes. Our commitment to quality and service has made us a favorite among pizza lovers.
+              </p>
+              <a
+                href="#contact"
+                className="inline-flex items-center text-pizza-600 hover:text-pizza-700 transition-colors"
+              >
+                Learn More
+                <ArrowRight className="ml-1 h-4 w-4" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-50">
+      <section id="contact" className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Visit Us</h2>
