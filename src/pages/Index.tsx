@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import { Star, Clock, Pizza, Phone, Mail, ArrowRight, MapPin, ChevronRight } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -145,17 +144,17 @@ const Index = () => {
             <div className="group rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white">
               <div className="relative overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5"
-                  alt="Pepperoni Pizza"
+                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
+                  alt="BBQ Chicken Pizza"
                   className="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute top-4 right-4 bg-white px-4 py-2 rounded-full font-semibold text-pizza-600">
-                  $14.99
+                  $15.99
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-semibold mb-3">Spicy Pepperoni</h3>
-                <p className="text-gray-600 mb-4">Premium pepperoni with melted cheese and our special sauce</p>
+                <h3 className="text-2xl font-semibold mb-3">BBQ Chicken</h3>
+                <p className="text-gray-600 mb-4">Grilled chicken, BBQ sauce, red onions, and melted cheese</p>
                 <a
                   href="#order"
                   className="inline-flex items-center text-pizza-600 hover:text-pizza-700 transition-colors font-medium"
@@ -170,7 +169,7 @@ const Index = () => {
               <div className="relative overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
-                  alt="Supreme Pizza"
+                  alt="Fajita Special Pizza"
                   className="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute top-4 right-4 bg-white px-4 py-2 rounded-full font-semibold text-pizza-600">
@@ -178,8 +177,80 @@ const Index = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-semibold mb-3">Supreme Delight</h3>
-                <p className="text-gray-600 mb-4">Loaded with fresh vegetables and premium meats</p>
+                <h3 className="text-2xl font-semibold mb-3">Fajita Special</h3>
+                <p className="text-gray-600 mb-4">Grilled chicken, bell peppers, onions with Mexican spices</p>
+                <a
+                  href="#order"
+                  className="inline-flex items-center text-pizza-600 hover:text-pizza-700 transition-colors font-medium"
+                >
+                  Order Now
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+              </div>
+            </div>
+
+            <div className="group rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee"
+                  alt="Super Supreme Pizza"
+                  className="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-white px-4 py-2 rounded-full font-semibold text-pizza-600">
+                  $18.99
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold mb-3">Super Supreme</h3>
+                <p className="text-gray-600 mb-4">Pepperoni, beef, chicken, mushrooms, olives, and bell peppers</p>
+                <a
+                  href="#order"
+                  className="inline-flex items-center text-pizza-600 hover:text-pizza-700 transition-colors font-medium"
+                >
+                  Order Now
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+              </div>
+            </div>
+
+            <div className="group rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1571066811602-716837d681de"
+                  alt="Tikka Sensation Pizza"
+                  className="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-white px-4 py-2 rounded-full font-semibold text-pizza-600">
+                  $17.99
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold mb-3">Tikka Sensation</h3>
+                <p className="text-gray-600 mb-4">Chicken tikka, onions, green chilies with special spices</p>
+                <a
+                  href="#order"
+                  className="inline-flex items-center text-pizza-600 hover:text-pizza-700 transition-colors font-medium"
+                >
+                  Order Now
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+              </div>
+            </div>
+
+            <div className="group rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e"
+                  alt="Crown Crust Pizza"
+                  className="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-white px-4 py-2 rounded-full font-semibold text-pizza-600">
+                  $19.99
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold mb-3">Crown Crust</h3>
+                <p className="text-gray-600 mb-4">Special crust filled with cheese, topped with premium toppings</p>
                 <a
                   href="#order"
                   className="inline-flex items-center text-pizza-600 hover:text-pizza-700 transition-colors font-medium"
@@ -277,10 +348,11 @@ const Index = () => {
                           </FormControl>
                           <SelectContent>
                             <SelectItem value="margherita">Classic Margherita ($12.99)</SelectItem>
-                            <SelectItem value="pepperoni">Spicy Pepperoni ($14.99)</SelectItem>
-                            <SelectItem value="supreme">Supreme Delight ($16.99)</SelectItem>
-                            <SelectItem value="vegetarian">Vegetarian ($13.99)</SelectItem>
-                            <SelectItem value="bbq">BBQ Chicken ($15.99)</SelectItem>
+                            <SelectItem value="bbq-chicken">BBQ Chicken ($15.99)</SelectItem>
+                            <SelectItem value="fajita">Fajita Special ($16.99)</SelectItem>
+                            <SelectItem value="supreme">Super Supreme ($18.99)</SelectItem>
+                            <SelectItem value="tikka">Tikka Sensation ($17.99)</SelectItem>
+                            <SelectItem value="crown">Crown Crust ($19.99)</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />
